@@ -1,0 +1,7 @@
+# Handle short URL redirects
+/:shortId /.netlify/functions/redirect/:shortId 200
+
+# Handle all other routes
+/* /index.html 200
+
+/ads.txt /ads.txt 200
