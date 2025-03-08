@@ -9,7 +9,6 @@ import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { SubscriptionProvider } from './context/SubscriptionContext';
 import GoogleAnalytics from './components/GoogleAnalytics';
-import GoogleAdsense from './components/GoogleAdsense';
 import SkeletonLoader from './components/SkeletonLoader';
 
 // Eagerly loaded components
@@ -195,7 +194,6 @@ function AppRoutes() {
       const scripts = [
         () => import('./components/PropellerAdsInit').then(m => m.default()),
         () => import('./components/GoogleAnalytics').then(m => m.default()),
-        () => import('./components/GoogleAdsense').then(m => m.default())
       ];
 
       for (const script of scripts) {
