@@ -1,0 +1,19 @@
+data_dir: "/etc/vector/"
+
+sources:
+  supabase_logs:
+    type: file
+    include: ["G:/My Drive/project 2.1/supabase/logs/*.log"]  # ✅ Correct path for Windows
+
+sinks:
+  stdout:
+    type: console
+    encoding:
+      codec: json
+  file_sink:
+    type: file
+    path: "/var/lib/vector/vector-debug.log"
+    encoding:
+      codec: json
+
+

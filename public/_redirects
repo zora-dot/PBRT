@@ -1,0 +1,8 @@
+# Redirect ads.txt to Ezoic
+/ads.txt https://srv.adstxtmanager.com/19390/pastebinrichtext.com 301!
+
+# Handle short URL redirects
+/:shortId /.netlify/functions/redirect/:shortId 200
+
+# Handle all other routes
+/* /index.html 200
