@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /settings
+Disallow: /dashboard
+Disallow: /drafts
+Disallow: /activity
+
+Sitemap: https://pastebinrichtext.com/sitemap.xml
