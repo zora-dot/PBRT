@@ -8,7 +8,6 @@ import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { SubscriptionProvider } from './context/SubscriptionContext';
 import GoogleAnalytics from './components/GoogleAnalytics';
-import GoogleAdsense from './components/GoogleAdsense';
 import SkeletonLoader from './components/SkeletonLoader';
 
 // Eagerly loaded components
@@ -317,7 +316,6 @@ function App() {
             <SubscriptionProvider>
               <BrowserRouter>
                 <GoogleAnalytics />
-                <GoogleAdsense />
                 <AppRoutes />
               </BrowserRouter>
             </SubscriptionProvider>
