@@ -1,0 +1,8 @@
+# Serve ads.txt directly (remove forced redirect)
+/ads.txt  /ads.txt  200!
+
+# Handle short URL redirects for both domains
+/:shortId /.netlify/functions/redirect/:shortId 200
+
+# Handle all other routes (ensure ads.txt is not affected)
+/* /index.html 200
